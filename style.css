@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('font-styles/Faceless-K7wel.ttf');
+  }
+
+body {
+    background-color: rgb(48, 44, 44);
+}
+
+div.container {
+
+
+}
+
+nav {
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+nav h1 {
+    float: left;
+    margin: 0 0 0 5%;
+    font-family: myFirstFont;
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    margin: 17.5px 20% 0 0;
+}
+
+nav ul li.menu-item {
+    float: left;
+    /* margin: 0 5px 0 5px; */
+    padding: 0px 10px 0 10px;
+    border-right: solid 1.5px rgb(124, 13, 13);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li.menu-item a:hover{
+    color: rgb(126, 4, 4);
+    cursor: pointer;
+}
+
+
+
+
+nav ul li.menu-item:first-child {
+    padding-left: 0;
+}
+
+nav ul li.menu-item:last-child {
+    border: none;
+    padding-right: 0;
+}
+
+
+
+nav ul li.dropdown-menu-parent ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    animation: growDown 400ms ease-in-out forwards;
+    transform-origin: top center;
+    
+}
+
+
+
+nav ul li.dropdown-menu-parent:hover ul.dropdown-menu {
+    display: block;
+}
+
+.off-hover-protection {
+    position: absolute;
+    width: 82.66px;
+    height: 17.5px;
+}
+
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
