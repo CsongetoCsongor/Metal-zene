@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kezdőlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <nav>
+            <h1>M e t a l</h1>
+            <ul>
+                <li class="menu-item"><a href="index.html">Kezdőlap</a></li>
+                <li class="menu-item"><a href="story.html">Történet</a></li>
+                <li class="menu-item dropdown-menu-parent">
+                    <a href="">Műfajok</a>
+                    <div class="off-hover-protection"></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="">Heavy Metal</a></li>
+                        <li class="dropdown-menu-item"><a href="">Trash Metal</a></li>
+                        <li class="dropdown-menu-item"><a href="">Death Metal</a></li>
+                        <li class="dropdown-menu-item"><a href="">Black Metal</a></li>
+                        <li class="dropdown-menu-item"><a href="">Metalcore</a></li>
+                        <li class="dropdown-menu-item"><a href="">Deathcore</a></li>
+                        <li class="dropdown-menu-item"><a href="">Egyéb</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    
+       <div class="container">
+            <img class="wide-img-story" src="imgs/emberek.jpg" alt="">
+
+            <div class="inst-holder">
+                <img src="imgs/guitar.png" alt="" id="guitar-img" class="inst-img">
+
+                <img src="imgs/drums.png" alt="" id="drums-img" class="inst-img">
+
+                <img src="imgs/bass.png" alt="" id="bass-guitar-img" class="inst-img">
+            </div>
+            <div class="clear"></div>
+
+            
+
+            <h1 class="title-big">A METÁL története</h1>
+
+            <div class="story-desc">
+                <p>
+                    A korai brit rockegyüttesekre nagy hatással volt az amerikai blueszene. Az 1960-as évek közepén olyan együttesek mint a The Rolling Stones és a The Yardbirds sok – eredetileg akusztikus gitáron előadott – klasszikus bluesnótát vettek lemezre elektromos gitárral és olykor gyorsabb tempóval. Ezekkel a zenei kísérletekkel az angol bluesalapú csapatok – és az általuk inspirált amerikai együttesek – kialakították azokat a stílusjegyeket, melyek a heavy metal alapjait adják: középpontban a kemény akkordokból építkező hangos és torzított gitárjáték.[39] Ennek a megszólalásnak a népszerűsítésében kiemelkedő szerepet játszott a The Kinks 1964-es slágere, a You Really Got Me.[40] A gitárhangzás fejlődésében jelentős szerepe volt a gitárerősítők feedback technológiával szerelt új generációjának. A The Kinks gitáros Dave Davies mellett más gitárosok, mint például Pete Townshend (The Who) és Jeff Beck (Tridents, The Yardbirds) is kísérleteztek a feedback technikával.[41] Hogy az egyre hangosabb gitárral lépést tudjanak tartani, a dobosok is erőteljesebb megszólalást, komplex és szintén hangosított megközelítést kezdtek alkalmazni, szemben a blues-rock – apró dobfelszereléseken elővezetett – kezdeti maszatolós dobolási stílusával.[42] <span id="dots">...</span><span id="more"> Az énekesek is hasonlóan módosították technikájukat és erősítőkön keresztül növelték önbizalmukat, gyakran stílusosabb és drámaibb előadásmóddal kísérve. A puszta hangerő tekintetében – főképp az élő koncertek esetén – a The Who „minél-nagyobb-és-hangosabb-Marshall-falakat”-megközelítése volt az irányadó.[43] Az erősítő- és felvételi technika egyidejű fejlődésével lehetőség nyílt ennek a súlyosabb megszólalásnak a sikeres lemezre préselésére is. A blues-rock és a pszichedelikus rock összeházasítása képezte a heavy metal igazi alapját.[44] A műfajok összeolvasztásának egyik legnagyobb hatású együttese a Cream trió volt, akik masszív, súlyos hangzást alakítottak ki a gitáros Eric Clapton és a basszusgitáros Jack Bruce közti uniszónó riffeléssel és Ginger Baker dupla lábdobjával.[45] Első két nagylemezüket – Fresh Cream (1966) és Disraeli Gears (1967) – az eljövendő műfaj alapvető prototípusaként tisztelik. A Jimi Hendrix Experience bemutatkozó albuma, az Are You Experienced? (1967) szintén nagy hatású volt. Hendrix virtuóz technikáját sok metálgitáros igyekezett később felülmúlni, és az album legsikeresebb dalát, a Purple Haze-t néhányan az első heavy metal slágerként aposztrofálják.[39]</span>
+                </p>
+
+                
+            </div>
+            <button onclick="myFunction()" id="myBtn">Több</button>
+
+       </div>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Több";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Kevesebb";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
