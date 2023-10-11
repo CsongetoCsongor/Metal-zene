@@ -268,3 +268,121 @@ button#myBtn:hover {
     color: rgb(99, 21, 21);
     border: solid 3px rgb(99, 21, 21);
 }
+
+
+.overlay-container {
+    position: relative;
+    width: 50%;
+    margin-left: 380px;
+    margin-bottom: 100px;
+}
+
+.img-hover-overlay {
+    display: block;
+    width: 100%;
+    
+  }
+  
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(99, 21, 21, 0.671);
+  }
+  
+  .overlay-container:hover .img-overlay {
+    opacity: 1;
+  }
+  
+.img-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    text-align: justify;
+  }
+
+.title-genre {
+    width: fit-content;
+}
+
+
+@media screen and (max-width: 1450px) {
+    .img-text {
+        font-size: 15px;
+    }
+}
+
+@keyframes cowmove{
+    0% {
+      transform: translateX(0px) rotateY(0deg);
+    }
+    49% {
+      transform: translateX(1220px) rotateY(0deg);
+    }
+    50% {
+      transform: translateX(1220px) rotateY(360deg);
+    }
+    100% {
+      transform: translateX(0px) rotateY(360deg);
+    }
+}
+
+.note {
+    /* margin-left: calc(50% - 50px); */
+    width: 100px;
+    float: left;
+    margin-top: 100px;
+    
+}
+
+#note-1 {
+    animation: cowmove 5s infinite;
+}
+
+#note-2 {
+    animation: cowmove 4s infinite;
+}
+
+#note-3 {
+    animation: cowmove 5s infinite;
+}
+
+#note-4 {
+    animation: cowmove 4s infinite;
+}
+
+#note-5 {
+    animation: cowmove 5s infinite;
+}
+
+#note-6 {
+    animation: cowmove 4s infinite;
+}
+
+footer p {
+    text-align: center;
+    background-color: rgba(99, 21, 21, 0.671);
+    color: white;
+    padding: 5px 0 5px 0;
+}
+
+footer a {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-txts {
+    margin: 20px 0 20px 0;
+}
